@@ -12,7 +12,8 @@ namespace Mock
    
         static void Main(string[] args) 
         {
-            Repository p = new Repository();
+            string path = Directory.GetCurrentDirectory();
+            Repository p = new Repository(path);
             p.Logger();
             var res = p.Load(Directory.GetCurrentDirectory()+"MyFile" + ".csv");
             Console.WriteLine(res);

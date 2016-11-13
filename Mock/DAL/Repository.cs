@@ -9,13 +9,14 @@ namespace DAL
         /// <summary>
         /// Path to the .csv file's directory
         /// </summary>
-        string path = Directory.GetCurrentDirectory();
+
+        string mypath;
 
         StreamWriter streamCSV = null;
 
-        public Repository()
+        public Repository(string path)
         {
-
+            mypath = path;
         }
 
         static void Main(string[] args)
@@ -27,9 +28,9 @@ namespace DAL
         public void Logger()
         {
             /* Create the directory if it not exist */
-            if (!Directory.Exists(path))
+            if (!Directory.Exists(mypath))
             {
-                Directory.CreateDirectory(path);
+                Directory.CreateDirectory(mypath);
             }
 
 
@@ -43,10 +44,10 @@ namespace DAL
                 if (streamCSV == null)
                 {
 
-                    streamCSV = new StreamWriter(new FileStream(path + "MyFile" + ".csv", FileMode.Append, FileAccess.Write, FileShare.ReadWrite));
+                    streamCSV = new StreamWriter(new FileStream(mypath + "MyFile" + ".csv", FileMode.Append, FileAccess.Write, FileShare.ReadWrite));
 
                     /* If the file is empty we make the header */
-                    var csvFileLenth = new System.IO.FileInfo(path + "MyFile" + ".csv").Length;
+                    var csvFileLenth = new System.IO.FileInfo(mypath + "MyFile" + ".csv").Length;
 
                     if (csvFileLenth == 0)
                     {
