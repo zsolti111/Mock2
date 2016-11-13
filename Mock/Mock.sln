@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mock", "Mock\Mock.csproj", "{9694F6B4-AEAA-44CC-B1E1-92D5B84B7293}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Porgram", "Mock\Porgram.csproj", "{9694F6B4-AEAA-44CC-B1E1-92D5B84B7293}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{FE4A832A-BAFA-4E1C-9A4A-0D8E375F7DC7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{9694F6B4-AEAA-44CC-B1E1-92D5B84B7293}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9694F6B4-AEAA-44CC-B1E1-92D5B84B7293}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9694F6B4-AEAA-44CC-B1E1-92D5B84B7293}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE4A832A-BAFA-4E1C-9A4A-0D8E375F7DC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE4A832A-BAFA-4E1C-9A4A-0D8E375F7DC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE4A832A-BAFA-4E1C-9A4A-0D8E375F7DC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE4A832A-BAFA-4E1C-9A4A-0D8E375F7DC7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
