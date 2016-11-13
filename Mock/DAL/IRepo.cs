@@ -9,6 +9,6 @@ namespace DAL
     interface IRepo
     {
         void Logger();
-        void Load(string path);
+        void string Load(string path);
     }
 }

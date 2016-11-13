@@ -82,7 +82,7 @@ namespace DAL
         /// <summary>
         /// Stop the Logging, close the Stream
         /// </summary>
-        public void StopLogTradeHistory()
+        public void StopLogging()
         {
             if (streamCSV != null)
             {
