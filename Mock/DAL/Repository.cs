@@ -51,8 +51,7 @@ namespace DAL
                     if (csvFileLenth == 0)
                     {
                         streamCSV.AutoFlush = true;
-                        streamCSV.Write("AAA" + Environment.NewLine +
-                                        "BBB" + Environment.NewLine);
+                        streamCSV.Write("AAA" );
 
                     }
 
@@ -79,16 +78,7 @@ namespace DAL
 
         }
 
-        /// <summary>
-        /// Stop the Logging, close the Stream
-        /// </summary>
-        public void StopLogging()
-        {
-            if (streamCSV != null)
-            {
-                streamCSV.Dispose();
-            }
-        }
+       
 
 
         /// <summary>
