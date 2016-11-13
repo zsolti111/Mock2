@@ -3,7 +3,7 @@ using System.IO;
 
 namespace DAL
 {
-    public class Repository : IDisposable
+    public class Repository : IDisposable, IRepo
     {
 
         /// <summary>
